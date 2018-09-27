@@ -10,7 +10,37 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_27_091941) do
+ActiveRecord::Schema.define(version: 2018_09_27_095933) do
+
+  create_table "categories", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.date "deleted_at"
+  end
+
+  create_table "customer_events", force: :cascade do |t|
+    t.integer "customer_id"
+    t.integer "event_id"
+    t.integer "payment_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "customers", force: :cascade do |t|
+    t.string "email"
+    t.string "full_name"
+    t.string "password"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "event_categories", force: :cascade do |t|
+    t.integer "event_id"
+    t.integer "category_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "events", force: :cascade do |t|
     t.string "name"
@@ -20,6 +50,13 @@ ActiveRecord::Schema.define(version: 2018_09_27_091941) do
     t.date "date"
     t.string "location"
     t.string "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "payments", force: :cascade do |t|
+    t.float "amount"
+    t.string "payment_provider"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
