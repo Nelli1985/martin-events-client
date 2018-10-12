@@ -7,6 +7,8 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <script src='https://www.google.com/recaptcha/api.js'></script>
   </head>
 
   <body>
@@ -16,6 +18,7 @@
     <% end %>  
     <%= yield %>
     <%= render partial:'layouts/sidebar' %>
+
     <p class="notice"><%= notice %></p>
     <p class= "alert"><%= alert %></p>
   </body>
