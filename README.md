@@ -50,7 +50,10 @@ reCAPTCHA: Note: Use localhost or 127.0.0.1 in domain if using localhost:3000.
 https://www.google.com/recaptcha/admin#list
 
 
-Once you have them, run in your terminal source ./secret.env
+Once you have them, run in your terminal 
+```
+source ./secret.env
+```
 
 Starting rails server to see your result in a browser:
 ```
