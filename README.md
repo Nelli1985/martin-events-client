@@ -31,12 +31,25 @@ bundle install
 ```
 Making database:
 ```
+rake db:install
+rake db:seed
 rake db:migrate
 ```
 Starting rails server to see your result in a browser:
 ```
 rails s
 ```
+
+You will need to create a secret.env file which would have three keys:
+
+export SENDGRID_API_KEY='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+export RECAPTCHA_SITE_KEY='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+export RECAPTCHA_SECRET_KEY='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
+
+you can create these keys here:
+Sendgrid: https://sendgrid.com/.com 
+Recapcha: https://www.google.com/recaptcha/admin#list
 
 ## Built With
 
@@ -61,6 +74,5 @@ This project is licensed under the MIT License
 * Hat tip to anyone whose code was used
 * Inspiration
 
-// API Key for email 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
 
 
