@@ -19,7 +19,7 @@ A step by step series of examples that tell you how to get a development up and 
 
 Cloning git repo:
 ```
-git clone https://github.com/sinivaal/martin-events-client
+git clone https://github.com/nelli1985/martin-events-client
 ```
 Opening the repo root folder:
 ```
@@ -31,14 +31,10 @@ bundle install
 ```
 Making database:
 ```
-rake db:install
-rake db:seed
 rake db:migrate
+rake db:seed
 ```
-Starting rails server to see your result in a browser:
-```
-rails s
-```
+
 
 You will need to create a secret.env file which would have three keys:
 
@@ -49,7 +45,17 @@ export RECAPTCHA_SECRET_KEY='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 
 you can create these keys here:
 Sendgrid: https://sendgrid.com/.com 
-Recapcha: https://www.google.com/recaptcha/admin#list
+
+reCAPTCHA: Note: Use localhost or 127.0.0.1 in domain if using localhost:3000.
+https://www.google.com/recaptcha/admin#list
+
+
+Once you have them, run in your terminal source ./secret.env
+
+Starting rails server to see your result in a browser:
+```
+rails s
+```
 
 ## Built With
 
