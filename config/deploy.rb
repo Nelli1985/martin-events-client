@@ -1,7 +1,7 @@
 # config valid for current version and patch releases of Capistrano
 lock "~> 3.11.0"
 
-set :application, "martin-events"
+set :application, "nelli"
 set :repo_url, "git@github.com:Nelli1985/martin-events-client.git"
 
 # Default branch is :master
