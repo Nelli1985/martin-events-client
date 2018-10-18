@@ -22,6 +22,7 @@ set :repo_url, "git@github.com:Nelli1985/martin-events-client.git"
 
 # Default value for :linked_files is []
  append :linked_files, "config/master.key"
+ append :linked_files, "config/db/production.sqlite3"
 
 # Default value for linked_dirs is []
 # append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
