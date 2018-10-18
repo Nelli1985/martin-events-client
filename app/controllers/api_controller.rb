@@ -9,7 +9,7 @@ class ApiController < ApplicationController
   		time: current_time.strftime("%H:%M"),
   		date: current_time.strftime("%Y-%m-%d"),
   		name: 'Kala Ahven',
-  		fruits: ['banana', 'watermelon']
+  		fruits: ['banana', 'watermelon', 'strawberry', 'potato', 'onion']
   	}
   end
 end
