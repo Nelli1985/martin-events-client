@@ -83,5 +83,17 @@ This project is licensed under the MIT License
 * Hat tip to anyone whose code was used
 * Inspiration
 
+to produce production version:
+```
+cap
+```
 
+deploy:
+```
+cap production deploy
+```
 
+adding master key:
+```
+scp config/master.key nelli@vso17.cariba.ee:/srv/apps/nelli/current/config
+```
